@@ -5,3 +5,9 @@ export interface ITask{
   summary: string;
   dueDate: Date;
 }
+
+export interface INewTaskData {
+  title: string;
+  summary: string;
+  dueDate: string;
+}
