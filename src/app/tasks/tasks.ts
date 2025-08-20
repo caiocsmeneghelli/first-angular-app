@@ -7,5 +7,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './tasks.css'
 })
 export class Tasks {
-  @Input({ required: false }) selectedUser!: string;
+  @Input() selectedUser: string | undefined;
 }
