@@ -16,12 +16,9 @@ export class App {
   protected readonly title = signal('first-angular-app');
 
   users = DUMMY_USERS;
-  selectUser = '';
+  selectUser?: string;
 
   get findSelectedUser() {
-    if (!this.selectUser) {
-      return { id: '', avatar: '', name: '' };
-    }
     return this.users.find(user => user.id === this.selectUser)!;
   }
 
