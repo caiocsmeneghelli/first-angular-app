@@ -3,10 +3,11 @@ import { EventEmitter } from '@angular/core';
 import { DatePipe } from '@angular/common'
 
 import { ITask } from './task.model';
+import { Card } from "../../shared/card/card";
 
 @Component({
   selector: 'app-task',
-  imports: [DatePipe],
+  imports: [DatePipe, Card],
   templateUrl: './task.html',
   styleUrl: './task.css'
 })
