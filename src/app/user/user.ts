@@ -4,9 +4,9 @@ import { IUser } from './user.model';
 
 @Component({
   selector: 'app-user',
-  imports: [],
   templateUrl: './user.html',
   styleUrl: './user.css',
+  standalone: false
 })
 export class User {
   @Input({required: true}) user!: IUser;
